@@ -36,12 +36,13 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-carnival-pink/20 border border-carnival-pink/40">
-            <span className="text-2xl">🎭</span>
-            <span className="text-carnival-pink font-semibold text-sm uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-carnival-pink/20 border border-carnival-pink/40 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-carnival-gold/20 via-carnival-pink/20 to-carnival-gold/20 animate-liquid-slide" />
+            <span className="text-2xl relative z-10">🎭</span>
+            <span className="text-carnival-pink font-semibold text-sm uppercase tracking-wider relative z-10">
               Oferta Especial de Pré-Carnaval
             </span>
-            <span className="text-2xl">🎭</span>
+            <span className="text-2xl relative z-10">🎭</span>
           </div>
 
           {/* Main Headline */}
@@ -67,14 +68,13 @@ const HeroSection = () => {
             <span>Não espere o carnaval acabar para ter acesso!</span>
             <span className="text-2xl">⚡</span>
           </div>
-
           {/* CTA Button */}
           <div className="pt-4">
             <Button 
               variant="gold" 
               size="xl" 
               onClick={scrollToPrice}
-              className="text-xl px-12"
+              className="text-xl px-12 animate-cta-pulse"
             >
               QUERO BEIJAR MUITO! 💋
             </Button>
