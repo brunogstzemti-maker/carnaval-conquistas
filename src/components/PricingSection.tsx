@@ -29,7 +29,7 @@ const PricingSection = () => {
 
           {/* Single Pricing Card */}
           <div className="p-8 md:p-10 rounded-3xl bg-card border-2 border-carnival-green shadow-glow-gold relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-gold" />
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-carnival-gold via-carnival-pink to-carnival-gold animate-liquid-slide" />
             <div className="absolute -top-2 left-1/2 -translate-x-1/2 px-4 py-1 bg-carnival-green text-background text-xs font-bold rounded-full">
               OFERTA LIMITADA
             </div>
@@ -68,7 +68,7 @@ const PricingSection = () => {
             </div>
 
             {/* CTA Button */}
-            <Button variant="gold" size="xl" className="w-full text-lg">
+            <Button variant="gold" size="xl" className="w-full text-lg animate-cta-pulse">
               GARANTIR MINHA VAGA 🎉
             </Button>
 

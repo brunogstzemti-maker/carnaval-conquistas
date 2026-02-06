@@ -131,6 +131,15 @@
     animation: confetti 4s linear infinite;
   }
 
+  .animate-cta-pulse {
+    animation: ctaPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-liquid-slide {
+    animation: liquidSlide 3s ease-in-out infinite;
+    background-size: 200% 200%;
+  }
+
   @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
@@ -144,5 +153,28 @@
   @keyframes confetti {
     0% { transform: translateY(-100%) rotate(0deg); }
     100% { transform: translateY(100vh) rotate(720deg); }
+  }
+
+  @keyframes ctaPulse {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 hsl(45 100% 55% / 0.7);
+    }
+    50% {
+      transform: scale(1.02);
+      box-shadow: 0 0 0 15px hsl(45 100% 55% / 0);
+    }
+  }
+
+  @keyframes liquidSlide {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 }
