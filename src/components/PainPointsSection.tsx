@@ -20,7 +20,7 @@ const PainPointsSection = () => {
         <div className="max-w-3xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="font-display text-4xl md:text-5xl text-foreground mb-4">
+            <h2 className="font-display text-4xl md:text-5xl text-primary mb-4">
               Já aconteceu com você?
             </h2>
           </div>
@@ -42,7 +42,7 @@ const PainPointsSection = () => {
 
           {/* Call to Action */}
           <div className="mt-12 text-center">
-            <h3 className="font-display text-5xl md:text-6xl text-gradient-carnival mb-6">
+            <h3 className="font-display text-5xl md:text-6xl text-primary mb-6">
               CHEGA DISSO!
             </h3>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -52,10 +52,10 @@ const PainPointsSection = () => {
           </div>
 
           {/* Good News */}
-          <div className="mt-12 p-8 rounded-2xl bg-gradient-to-r from-carnival-green/10 to-carnival-teal/10 border border-carnival-green/30">
-            <div className="text-center">
+          <div className="mt-12 p-8 rounded-lg bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/30">
+            <div className="text-left">
               <span className="text-4xl">📌</span>
-              <h4 className="font-display text-3xl md:text-4xl text-carnival-green mt-4 mb-4">
+              <h4 className="font-display text-3xl md:text-4xl text-primary mt-4 mb-4">
                 A boa notícia?
               </h4>
               <p className="text-xl text-foreground">

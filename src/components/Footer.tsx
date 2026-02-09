@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="py-8 border-t border-border">
@@ -5,15 +7,12 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Legal Links */}
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-foreground transition-colors">
-              Termos & Condições
-            </a>
-            <a href="#" className="hover:text-foreground transition-colors">
-              Política de Privacidade
-            </a>
-            <a href="#" className="hover:text-foreground transition-colors">
+            <Link to="/termos-de-uso" className="hover:text-foreground transition-colors">
               Termos de Uso
-            </a>
+            </Link>
+            <Link to="/politica-de-privacidade" className="hover:text-foreground transition-colors">
+              Política de Privacidade
+            </Link>
           </div>
 
           {/* Copyright */}

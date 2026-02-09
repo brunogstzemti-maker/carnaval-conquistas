@@ -1,3 +1,5 @@
+
+
 const BeforeAfterSection = () => {
   return (
     <section className="py-20">
@@ -13,36 +15,42 @@ const BeforeAfterSection = () => {
           {/* Before/After Grid */}
           <div className="grid md:grid-cols-2 gap-8">
             {/* Before */}
-            <div className="p-8 rounded-2xl bg-destructive/10 border border-destructive/30">
-              <div className="flex items-center gap-3 mb-6">
-                <span className="text-4xl">👎</span>
-                <h3 className="font-display text-3xl text-destructive">ANTES</h3>
+            <div className="rounded-2xl overflow-hidden border border-destructive/30 shadow-lg group">
+              <div className="relative">
+                <img
+                  src="/antes.jpg.png"
+                  alt="Antes: Cara sozinho e tímido"
+                  className="w-full h-auto object-cover aspect-[4/3] group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-4 left-4 bg-destructive text-destructive-foreground px-4 py-1 rounded-full font-bold text-sm shadow-md">
+                  👎 ANTES
+                </div>
               </div>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Você ficava sem saber o que dizer, via outras pessoas se divertindo e terminava a noite sem um único beijo.
-              </p>
             </div>
 
             {/* After */}
-            <div className="p-8 rounded-2xl bg-carnival-green/10 border border-carnival-green/30">
-              <div className="flex items-center gap-3 mb-6">
-                <span className="text-4xl">👍</span>
-                <h3 className="font-display text-3xl text-carnival-green">DEPOIS</h3>
+            <div className="rounded-2xl overflow-hidden border border-primary/30 shadow-lg group">
+              <div className="relative">
+                <img
+                  src="/depois.jpg.png"
+                  alt="Depois: Cara confiante com mulheres"
+                  className="w-full h-auto object-cover aspect-[4/3] group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-4 py-1 rounded-full font-bold text-sm shadow-md">
+                  👍 DEPOIS
+                </div>
               </div>
-              <p className="text-lg text-foreground leading-relaxed">
-                Você se torna um cara <span className="text-primary font-bold">confiante</span>, sabendo exatamente o que falar para abrir qualquer conversa e criar oportunidades de beijos sem parecer desesperado.
-              </p>
             </div>
           </div>
 
           {/* Final CTA */}
           <div className="mt-12 text-center">
-            <div className="inline-block p-6 rounded-xl bg-gradient-to-r from-carnival-orange/20 to-carnival-pink/20 border border-carnival-orange/40">
+            <div className="inline-block p-6 rounded-xl bg-gradient-to-r from-primary/20 to-primary/10 border border-primary/40">
               <span className="text-3xl">💥</span>
               <p className="text-xl md:text-2xl font-display text-foreground mt-3">
                 A escolha é sua:{" "}
                 <span className="text-muted-foreground">ficar assistindo</span> ou finalmente{" "}
-                <span className="text-gradient-carnival">APROVEITAR O CARNAVAL!</span>
+                <span className="text-primary">APROVEITAR O CARNAVAL!</span>
               </p>
             </div>
           </div>

@@ -33,10 +33,10 @@ const WhatYouGetSection = () => {
             {items.map((item, index) => (
               <div
                 key={index}
-                className="p-6 rounded-2xl bg-background border border-border hover:border-primary/50 transition-all hover:scale-[1.02] text-center group"
+                className="p-6 rounded-2xl bg-background border border-border hover:border-primary transition-all duration-300 hover:scale-[1.02] text-center group"
               >
                 <span className="text-4xl block mb-4">{item.emoji}</span>
-                <h3 className="font-display text-2xl text-primary mb-3 group-hover:text-gradient-gold transition-all">
+                <h3 className="font-display text-2xl text-primary mb-3">
                   {item.title}
                 </h3>
                 <p className="text-muted-foreground">{item.description}</p>
@@ -45,15 +45,15 @@ const WhatYouGetSection = () => {
           </div>
 
           {/* Bonus */}
-          <div className="p-8 rounded-2xl bg-gradient-to-r from-carnival-purple/20 to-carnival-pink/20 border-2 border-carnival-purple/40 relative overflow-hidden">
-            <div className="absolute top-4 right-4 px-3 py-1 bg-carnival-purple text-foreground text-xs font-bold rounded-full">
+          <div className="p-8 rounded-lg bg-gradient-to-r from-primary/20 to-primary/10 border-2 border-primary/40 relative overflow-hidden">
+            <div className="absolute top-4 right-4 px-3 py-1 bg-primary text-primary-foreground text-xs font-bold rounded-full">
               BÔNUS
             </div>
-            
+
             <div className="flex items-start gap-4">
               <span className="text-5xl">🔓</span>
               <div>
-                <h3 className="font-display text-2xl md:text-3xl text-carnival-purple mb-3">
+                <h3 className="font-display text-2xl md:text-3xl text-primary mb-3">
                   Bônus Especial
                 </h3>
                 <p className="text-lg text-foreground leading-relaxed">

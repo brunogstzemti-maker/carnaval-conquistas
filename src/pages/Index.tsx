@@ -8,9 +8,12 @@ import BeforeAfterSection from "@/components/BeforeAfterSection";
 import PricingSection from "@/components/PricingSection";
 import Footer from "@/components/Footer";
 
+import CountdownTimer from "@/components/CountdownTimer";
+
 const Index = () => {
   return (
     <main className="min-h-screen bg-background overflow-x-hidden">
+      <CountdownTimer />
       <HeroSection />
       <PainPointsSection />
       <ProductSection />

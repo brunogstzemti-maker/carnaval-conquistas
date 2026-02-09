@@ -30,7 +30,7 @@ const ProductSection = () => {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-4 mb-4">
               <span className="text-5xl">🎭</span>
-              <h2 className="font-display text-4xl md:text-6xl text-gradient-gold">
+              <h2 className="font-display text-4xl md:text-6xl text-primary">
                 50 Abordagens Infalíveis
               </h2>
               <span className="text-5xl">🎭</span>
